@@ -1,0 +1,126 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Subneting</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/cover.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Subnetting</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Issues</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <form class="form-inline">
+              <div class="form-group">
+                <label>Ip : </label>
+                <input type="text" id="ip" class="form-control" placeholder="Example: 25.143.99.17" value="25.143.99.17">
+              </div>
+
+              <div class="form-group">
+                <label>Sub Red : </label>
+                <input type="text" id="subred" class="form-control" placeholder="Example: 23" value="23">
+              </div>
+
+              <button id="calcular" type="submit" class="btn btn-default">Calcular</button>
+            </form>
+
+            <!-- Table -->
+            <div class="row">
+              <div class="col-md-2">Sub Red</div>
+              <div class="col-md-1" id="vt-subred">/x</div>
+              <div class="col-md-3" id="vt-subred-ip">xxx.xxx.xxx.xxx</div>
+              <div class="col-md-6" id="vt-subred-bin">xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Ip</div>
+              <div class="col-md-3" id="vt-ip">xxx.xxx.xxx.xxx</div>
+              <div class="col-md-6" id="vt-ip-bin">xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Dir. Red</div>
+              <div class="col-md-3" id="vt-red-ip">xxx.xxx.xxx.xxx</div>
+              <div class="col-md-6" id="vt-red-bin">xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Dir. 1</div>
+              <div class="col-md-3" id="vt-dir-ip-1">xxx.xxx.xxx.xxx</div>
+              <div class="col-md-6" id="vt-dir-bin-1">xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Dir. Ul</div>
+              <div class="col-md-3" id="vt-dir-ip-ul">xxx.xxx.xxx.xxx</div>
+              <div class="col-md-6" id="vt-dir-bin-ul">xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Dir. bc</div>
+              <div class="col-md-3" id="vt-dir-ip-bc">xxx.xxx.xxx.xxx</div>
+              <div class="col-md-6" id="vt-dir-bin-bc">xxxxxxxx.xxxxxxxx.xxxxxxxx.xxxxxxxx</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Host totales</div>
+              <div class="col-md-3" id="ht-exponente">2^x</div>
+              <div class="col-md-6" id="ht-result">x Host totales</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Host Útiles</div>
+              <div class="col-md-3" id="hu-exponente">2^x - 2</div>
+              <div class="col-md-6" id="hu-result">x Host Útiles</div>
+            </div>
+
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Calculator Ips <a href="#">Subnetting</a>, by <a href="https://twitter.com/Billy_Caballero">@Billy_Caballero</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap 
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="vendor/jquery/jquery-2.1.4.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Application -->
+    <script src="app/util.js"></script>
+    <script src="app/SubRed.js"></script>
+    <script src="app/main.js"></script>
+  
+
+</body></html>
